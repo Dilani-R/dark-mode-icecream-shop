@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beosas · Midnight Gelato Speakeasy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav__logo">Beosas<span>.</span></a>
+  <ul class="nav__links">
+    <li><a href="#selection">Tonight's Selection</a></li>
+    <li><a href="#craft">The Craft</a></li>
+    <li><a href="#library">Flavor Library</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul>
+  <button class="nav__cart" id="navCartBtn">
+    Your Box
+    <span class="nav__cart-count" id="navCartCount">0</span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img src="images/backg.jpg" alt="">
+  </div>
+  <div class="hero__content">
+    <div class="hero__eyebrow eyebrow">Midnight Gelato Speakeasy · Est. 2014</div>
+    <h1 class="hero__title h-display">
+      Twelve scoops,
+      <span class="italic">churned after dark.</span>
+    </h1>
+    <p class="hero__sub">
+      A small-batch gelato counter hidden behind an unmarked door on Hawthorne Lane. Single-origin vanilla, Bronte pistachio, and twelve rotating flavors — served until the last scoop is gone.
+    </p>
+    <div class="hero__cta-row">
+      <a href="#selection" class="btn btn--solid">
+        View tonight's menu
+        <span class="btn__arrow"></span>
+      </a>
+      <a href="#craft" class="btn--text">Read the craft</a>
+    </div>
+  </div>
+  <div class="hero__meta">
+    <div>Open <span>Wed — Sun</span></div>
+    <div>From <span>7pm · till late</span></div>
+    <div>82 Hawthorne Lane</div>
+  </div>
+  <div class="hero__scroll">Scroll</div>
+</section>
+
+<!-- ============ TONIGHT'S SELECTION ============ -->
+<section class="cardstack" id="selection">
+  <div class="section" style="padding-bottom: 4rem;">
+    <div class="section__inner">
+      <div class="section__head" data-reveal>
+        <div class="section__head-left">
+          <div class="eyebrow">Tonight's Selection · 04 featured</div>
+          <h2 class="h-section">Four flavors, <span class="italic">drawn from the barrel</span> this evening.</h2>
+          <p>Each batch is churned between 4 and 6pm, then rested in copper drums. When a drum runs dry, the flavor comes off the board until tomorrow.</p>
+        </div>
+        <div class="section__head-right">
+          <span>Updated</span>
+          7:14 PM
+          <span>This evening</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardstack__pin" id="cardstackPin">
+    <div class="cardstack__card" data-card="0">
+      <div class="cardstack__card-img">
+        <img src="images/vanilla.jpg" alt="">
+      </div>
+      <div class="cardstack__card-body">
+        <div class="cardstack__card-num">01</div>
+        <div>
+          <div class="cardstack__card-flavor">Flavor 01 · Madagascar</div>
+          <h3 class="cardstack__card-title h-card">Bourbon Vanilla,<br><span class="italic">slow-steeped.</span></h3>
+          <p class="cardstack__card-notes">Single-origin beans from the Sava region, slit and steeped in cream for 36 hours. Specked, never speckled-imitation.</p>
+        </div>
+        <div>
+          <dl class="cardstack__card-meta">
+            <div>
+              <dt>Origin</dt>
+              <dd>Sava, <span class="italic">MG</span></dd>
+            </div>
+            <div>
+              <dt>Butterfat</dt>
+              <dd>17<span class="italic">%</span></dd>
+            </div>
+            <div>
+              <dt>Pairing</dt>
+              <dd>Espresso</dd>
+            </div>
+          </dl>
+          <div class="cardstack__card-actions">
+            <div class="cardstack__card-price">$9</div>
+            <button class="btn flavor-add" data-id="vanilla" data-name="Bourbon Vanilla" data-price="9" data-img="vanilla-bourbon-gelato">
+              Add to box
+              <span class="btn__arrow"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardstack__card" data-card="1">
+      <div class="cardstack__card-img">
+        <img src="pista.jpg" alt="">
+      </div>
+      <div class="cardstack__card-body">
+        <div class="cardstack__card-num">02</div>
+        <div>
+          <div class="cardstack__card-flavor">Flavor 02 · Sicily</div>
+          <h3 class="cardstack__card-title h-card">Bronte Pistachio,<br><span class="italic">unroasted.</span></h3>
+          <p class="cardstack__card-notes">DOP pistachios from the slopes of Mount Etna, ground raw into a sage-green paste. No coloring, no extract — the earth comes through.</p>
+        </div>
+        <div>
+          <dl class="cardstack__card-meta">
+            <div>
+              <dt>Origin</dt>
+              <dd>Bronte, <span class="italic">IT</span></dd>
+            </div>
+            <div>
+              <dt>Butterfat</dt>
+              <dd>16<span class="italic">%</span></dd>
+            </div>
+            <div>
+              <dt>Pairing</dt>
+              <dd>Olive oil</dd>
+            </div>
+          </dl>
+          <div class="cardstack__card-actions">
+            <div class="cardstack__card-price">$11</div>
+            <button class="btn flavor-add" data-id="pistachio" data-name="Bronte Pistachio" data-price="11" data-img="pistachio-bronte-gelato">
+              Add to box
+              <span class="btn__arrow"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardstack__card" data-card="2">
+      <div class="cardstack__card-img">
+        <img src="images/choco.jpg" alt="">
+      </div>
+      <div class="cardstack__card-body">
+        <div class="cardstack__card-num">03</div>
+        <div>
+          <div class="cardstack__card-flavor">Flavor 03 · Tanzania</div>
+          <h3 class="cardstack__card-title h-card">Single-Origin Cacao,<br><span class="italic">85%.</span></h3>
+          <p class="cardstack__card-notes">Kokoa Kamili beans, stone-ground for 48 hours into a deep, bitter gelato that finishes clean. For drinkers of dark coffee.</p>
+        </div>
+        <div>
+          <dl class="cardstack__card-meta">
+            <div>
+              <dt>Origin</dt>
+              <dd>Morogoro, <span class="italic">TZ</span></dd>
+            </div>
+            <div>
+              <dt>Butterfat</dt>
+              <dd>14<span class="italic">%</span></dd>
+            </div>
+            <div>
+              <dt>Pairing</dt>
+              <dd>Mezcal</dd>
+            </div>
+          </dl>
+          <div class="cardstack__card-actions">
+            <div class="cardstack__card-price">$10</div>
+            <button class="btn flavor-add" data-id="cacao" data-name="Single-Origin Cacao" data-price="10" data-img="dark-cacao-gelato">
+              Add to box
+              <span class="btn__arrow"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardstack__card" data-card="3">
+      <div class="cardstack__card-img">
+        <img src="images/straw.jpg" alt="">
+      </div>
+      <div class="cardstack__card-body">
+        <div class="cardstack__card-num">04</div>
+        <div>
+          <div class="cardstack__card-flavor">Flavor 04 · Puyallup</div>
+          <h3 class="cardstack__card-title h-card">Wild Strawberry<br><span class="italic">& basil.</span></h3>
+          <p class="cardstack__card-notes">Hood River strawberries macerated with torn Genovese basil. A savory sorbetto that reads more like a cocktail than a dessert.</p>
+        </div>
+        <div>
+          <dl class="cardstack__card-meta">
+            <div>
+              <dt>Origin</dt>
+              <dd>Hood River, <span class="italic">OR</span></dd>
+            </div>
+            <div>
+              <dt>Butterfat</dt>
+              <dd>4<span class="italic">%</span></dd>
+            </div>
+            <div>
+              <dt>Pairing</dt>
+              <dd>Gin</dd>
+            </div>
+          </dl>
+          <div class="cardstack__card-actions">
+            <div class="cardstack__card-price">$11</div>
+            <button class="btn flavor-add" data-id="strawberry" data-name="Wild Strawberry & Basil" data-price="11" data-img="strawberry-basil-gelato">
+              Add to box
+              <span class="btn__arrow"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE CRAFT ============ -->
+<section class="section craft" id="craft">
+  <div class="section__inner">
+    <div class="craft__grid">
+      <div class="craft__copy" data-reveal>
+        <div class="eyebrow">The Craft · Since 2014</div>
+        <h2 class="h-section">A small batch is <span class="italic">a honest batch.</span></h2>
+        <p>
+          Every morning at four, Marco walks the back stair with a single bucket of milk from a farm thirty minutes east. The cream is folded by hand into a copper drum that holds exactly twelve liters — small enough that no flavor ever has to wait.
+        </p>
+        <p>
+          <span class="italic">We never use stabilizers, never use paste, never use dye.</span> If a flavor runs out by 11pm, it runs out. The board changes. The night changes. That is the whole point.
+        </p>
+        <div class="craft__copy-cta">
+          <a href="#library" class="btn">
+            See the full library
+            <span class="btn__arrow"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="craft__visual" data-reveal data-reveal-delay="2">
+        <div class="craft__visual-img">
+          <img src="images/bg.jpg" alt="">
+        </div>
+        <div class="seal">
+          <svg class="seal__ring" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="seal-path" d="M 90,90 m -72,0 a 72,72 0 1,1 144,0 a 72,72 0 1,1 -144,0" />
+            </defs>
+            <circle cx="90" cy="90" r="86" fill="none" stroke="#d2a855" stroke-width="0.5" opacity="0.5"/>
+            <circle cx="90" cy="90" r="76" fill="none" stroke="#d2a855" stroke-width="0.5" opacity="0.3"/>
+            <text fill="#d2a855" font-family="Inter" font-size="9" font-weight="500" letter-spacing="3">
+              <textPath href="#seal-path">EST. 2014 · HAND-CHURNED · SMALL BATCH · SINGLE ORIGIN · </textPath>
+            </text>
+          </svg>
+          <div class="seal__center">
+            <div class="seal__center-mark">F</div>
+            <div class="seal__center-text">Beosas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="craft__stats" data-reveal data-reveal-delay="3">
+      <div class="craft__stat">
+        <div class="craft__stat-num">12</div>
+        <div class="craft__stat-label">Flavors<br>rotating weekly</div>
+      </div>
+      <div class="craft__stat">
+        <div class="craft__stat-num">36<span style="font-size:1.5rem;color:var(--gold-400)">h</span></div>
+        <div class="craft__stat-label">Vanilla steep<br>time, in cream</div>
+      </div>
+      <div class="craft__stat">
+        <div class="craft__stat-num">0</div>
+        <div class="craft__stat-label">Stabilizers<br>or artificial dye</div>
+      </div>
+      <div class="craft__stat">
+        <div class="craft__stat-num">11<span style="font-size:1.5rem;color:var(--gold-400)">pm</span></div>
+        <div class="craft__stat-label">Last scoop<br>each night</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLAVOR LIBRARY ============ -->
+<section class="section library" id="library">
+  <div class="section__inner">
+    <div class="section__head" data-reveal>
+      <div class="section__head-left">
+        <div class="eyebrow">Flavor Library · 09 available</div>
+        <h2 class="h-section">The full board, <span class="italic">in order of intensity.</span></h2>
+        <p>From the softest vanilla to the deepest cacao. Each one can be added to a four-pack, six-pack, or twelve-box.</p>
+      </div>
+      <div class="section__head-right">
+        <span>Sorted by</span>
+        Intensity
+        <span>Low → High</span>
+      </div>
+    </div>
+
+    <div class="library__grid">
+      <article class="flavor-card" data-reveal data-reveal-delay="1">
+        <div class="flavor-card__img">
+          <img src="images/vanilla.jpg" alt="">
+          <div class="flavor-card__num">No. 01</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Bourbon Vanilla</h3>
+          <p class="flavor-card__notes">Madagascar bean, 36-hour steep. Specked, soft, almost custard.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$9</div>
+            <button class="flavor-card__add flavor-add" data-id="vanilla" data-name="Bourbon Vanilla" data-price="9" data-img="madagascar-vanilla-bourbon">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="2">
+        <div class="flavor-card__img">
+          <img src="images/salted.jpg" alt="">
+          <div class="flavor-card__num">No. 02</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Salted Caramel</h3>
+          <p class="flavor-card__notes">Caramel burnt to the edge of bitter, folded with Maldon flake.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$10</div>
+            <button class="flavor-card__add flavor-add" data-id="caramel" data-name="Salted Caramel" data-price="10" data-img="salted-caramel-gelato-dark">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="3">
+        <div class="flavor-card__img">
+          <img src="images/hazel.jpg" alt="">
+          <div class="flavor-card__num">No. 03</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Toasted Hazelnut</h3>
+          <p class="flavor-card__notes">Piedmont Tonda Gentile, oven-toasted then stone-ground whole.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$10</div>
+            <button class="flavor-card__add flavor-add" data-id="hazelnut" data-name="Toasted Hazelnut" data-price="10" data-img="toasted-hazelnut-gelato">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="1">
+        <div class="flavor-card__img">
+          <img src="images/coffee.jpg" alt="">
+          <div class="flavor-card__num">No. 04</div>
+          <div class="flavor-card__tag">House</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Espresso Stracciatella</h3>
+          <p class="flavor-card__notes">Single-origin espresso base, shattered dark chocolate folded in last.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$11</div>
+            <button class="flavor-card__add flavor-add" data-id="stracciatella" data-name="Espresso Stracciatella" data-price="11" data-img="stracciatella-espresso-gelato">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="2">
+        <div class="flavor-card__img">
+          <img src="images/sesame.jpg" alt="">
+          <div class="flavor-card__num">No. 05</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Black Sesame</h3>
+          <p class="flavor-card__notes">Toasted sesame paste, sweet cream, a whisper of soy. Almost savory.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$11</div>
+            <button class="flavor-card__add flavor-add" data-id="sesame" data-name="Black Sesame" data-price="11" data-img="black-sesame-gelato-dark">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="3">
+        <div class="flavor-card__img">
+          <img src="images/pecan.jpg" alt="">
+          <div class="flavor-card__num">No. 06</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Brown Butter Pecan</h3>
+          <p class="flavor-card__notes">Pecans browned in butter until nutmeg-dark, then folded warm into cream.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$10</div>
+            <button class="flavor-card__add flavor-add" data-id="pecan" data-name="Brown Butter Pecan" data-price="10" data-img="brown-butter-pecan-gelato">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="1">
+        <div class="flavor-card__img">
+          <img src="images/pista.jpg" alt="">
+          <div class="flavor-card__num">No. 07</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Bronte Pistachio</h3>
+          <p class="flavor-card__notes">DOP Sicilian pistachio, raw-ground. Sage green, never dyed.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$11</div>
+            <button class="flavor-card__add flavor-add" data-id="pistachio" data-name="Bronte Pistachio" data-price="11" data-img="bronte-pistachio-gelato-dark">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="2">
+        <div class="flavor-card__img">
+          <img src="images/straw.jpg" alt="">
+          <div class="flavor-card__num">No. 08</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Wild Strawberry & Basil</h3>
+          <p class="flavor-card__notes">Hood River berry, torn Genovese basil. A savory sorbetto.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$11</div>
+            <button class="flavor-card__add flavor-add" data-id="strawberry" data-name="Wild Strawberry & Basil" data-price="11" data-img="wild-strawberry-basil-sorbetto">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="flavor-card" data-reveal data-reveal-delay="3">
+        <div class="flavor-card__img">
+          <img src="images/choco.jpg" alt="">
+          <div class="flavor-card__num">No. 09</div>
+          <div class="flavor-card__tag">85%</div>
+        </div>
+        <div class="flavor-card__body">
+          <h3 class="flavor-card__name">Single-Origin Cacao</h3>
+          <p class="flavor-card__notes">Tanzanian Kokoa Kamili, stone-ground 48 hours. Bitter, clean finish.</p>
+          <div class="flavor-card__footer">
+            <div class="flavor-card__price">$10</div>
+            <button class="flavor-card__add flavor-add" data-id="cacao" data-name="Single-Origin Cacao" data-price="10" data-img="tanzania-dark-cacao-gelato">
+              Add
+              <span class="flavor-card__add-icon"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURATED BOXES ============ -->
+<section class="section boxes" id="boxes">
+  <div class="section__inner">
+    <div class="section__head" data-reveal>
+      <div class="section__head-left">
+        <div class="eyebrow">Build Your Box · Three sizes</div>
+        <h2 class="h-section">Pre-built boxes, <span class="italic">or curate your own.</span></h2>
+        <p>Each box ships in insulated copper-lined packaging. Mix any flavor — our curators have suggested pairings below.</p>
+      </div>
+      <div class="section__head-right">
+        <span>Local delivery</span>
+        Under 60 min
+        <span>$50+ free</span>
+      </div>
+    </div>
+
+    <div class="boxes__grid">
+      <div class="box-card" data-reveal data-reveal-delay="1">
+        <div class="box-card__num">04</div>
+        <div class="box-card__num-sub">Flavor Tasting</div>
+        <h3 class="box-card__title">The Quartet</h3>
+        <p class="box-card__desc">A small introduction to the evening's board. Four scoops, hand-selected by the chef on duty.</p>
+        <ul class="box-card__includes">
+          <li>4 × 4oz scoops</li>
+          <li>Copper-tinned box</li>
+          <li>Pairing card included</li>
+        </ul>
+        <div class="box-card__price-row">
+          <div class="box-card__price">$36</div>
+          <div class="box-card__per">$9 / scoop</div>
+        </div>
+        <button class="btn flavor-add" data-id="quartet" data-name="The Quartet Box" data-price="36" data-img="quartet-box-gelato">
+          Add to box
+          <span class="btn__arrow"></span>
+        </button>
+      </div>
+
+      <div class="box-card box-card--featured" data-reveal data-reveal-delay="2">
+        <div class="box-card__tag">Most ordered</div>
+        <div class="box-card__num">06</div>
+        <div class="box-card__num-sub">Flavor Flight</div>
+        <h3 class="box-card__title">The Sixtet</h3>
+        <p class="box-card__desc">Six scoops spanning the full intensity range — from vanilla to single-origin cacao. The way most regulars start.</p>
+        <ul class="box-card__includes">
+          <li>6 × 4oz scoops</li>
+          <li>Copper-tinned box</li>
+          <li>Pairing card + tasting notes</li>
+          <li>Free local delivery</li>
+        </ul>
+        <div class="box-card__price-row">
+          <div class="box-card__price">$54</div>
+          <div class="box-card__per">$9 / scoop</div>
+        </div>
+        <button class="btn btn--solid flavor-add" data-id="sixtet" data-name="The Sixtet Box" data-price="54" data-img="sixtet-box-gelato">
+          Add to box
+          <span class="btn__arrow"></span>
+        </button>
+      </div>
+
+      <div class="box-card" data-reveal data-reveal-delay="3">
+        <div class="box-card__num">12</div>
+        <div class="box-card__num-sub">Full Library</div>
+        <h3 class="box-card__title">The Twelve</h3>
+        <p class="box-card__desc">Every flavor on tonight's board, one scoop each. Built for a table of four, or one very long evening.</p>
+        <ul class="box-card__includes">
+          <li>12 × 4oz scoops</li>
+          <li>Engraved copper box</li>
+          <li>Full pairing menu</li>
+          <li>Free local delivery</li>
+        </ul>
+        <div class="box-card__price-row">
+          <div class="box-card__price">$108</div>
+          <div class="box-card__per">$9 / scoop</div>
+        </div>
+        <button class="btn flavor-add" data-id="twelve" data-name="The Twelve Box" data-price="108" data-img="twelve-box-gelato">
+          Add to box
+          <span class="btn__arrow"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="section visit" id="visit">
+  <div class="section__inner">
+    <div class="visit__grid">
+      <div class="visit__copy" data-reveal>
+        <div class="eyebrow">Visit · Hawthorne Lane</div>
+        <h2 class="h-section">Find the door <span class="italic">with no sign.</span></h2>
+        <p>An unmarked black door on Hawthorne Lane, between the wine shop and the tailor. Knock once. If the light above the door is on, we are open.</p>
+        <p>Reservations are not taken. We hold a counter of fourteen seats, six stools, and one corner booth. First come, first poured.</p>
+
+        <div class="visit__details">
+          <div class="visit__detail">
+            <h4>Address</h4>
+            <p>82 Hawthorne Lane<br>Eastside, Portland</p>
+          </div>
+          <div class="visit__detail">
+            <h4>Hours</h4>
+            <p>Wed — Sun<br>7pm — late</p>
+          </div>
+          <div class="visit__detail">
+            <h4>Telephone</h4>
+            <p>+1 (503) 555 0114</p>
+          </div>
+          <div class="visit__detail">
+            <h4>Counter</h4>
+            <p>14 seats<br>Walk-in only</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="visit__img" data-reveal data-reveal-delay="2">
+        <img src="images/door.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h3>Beosas<span>.</span></h3>
+        <p>Small-batch gelato, churned after dark. An unmarked door on Hawthorne Lane, Portland. Open Wednesday through Sunday, from 7pm until the last scoop is poured.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#selection">Tonight's menu</a></li>
+          <li><a href="#craft">The craft</a></li>
+          <li><a href="#library">Flavor library</a></li>
+          <li><a href="#boxes">Build a box</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="#visit">82 Hawthorne Lane</a></li>
+          <li><a href="#">Portland, OR 97214</a></li>
+          <li><a href="#">+1 (503) 555 0114</a></li>
+          <li><a href="#">Wed — Sun, 7pm</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Letters</h4>
+        <ul>
+          <li><a href="#">The nightly menu</a></li>
+          <li><a href="#">Pairing notes</a></li>
+          <li><a href="#">Reserve a tasting</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© Beosas Gelato · MMXIV — MMXXV</div>
+      <div class="footer__bottom-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Press</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<aside class="cart" id="cart" aria-label="Shopping cart">
+  <div class="cart__head">
+    <div>
+      <h3>Your Box</h3>
+      <div class="cart__head-sub">Packed on ice · 60-min delivery</div>
+    </div>
+    <button class="cart__close" id="cartClose" aria-label="Close cart"></button>
+  </div>
+  <div class="cart__body" id="cartBody"></div>
+  <div class="cart__foot" id="cartFoot" style="display:none">
+    <div class="cart__row">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">$0</span>
+    </div>
+    <div class="cart__row">
+      <span>Local delivery</span>
+      <span id="cartDelivery">—</span>
+    </div>
+    <div class="cart__row cart__total">
+      <span>Total</span>
+      <span id="cartTotal">$0</span>
+    </div>
+    <button class="cart__checkout" id="cartCheckout">Begin checkout</button>
+    <p class="cart__note">Free delivery over $50 · packed within the hour</p>
+  </div>
+</aside>
+
+<button class="cart-fab" id="cartFab" aria-label="Open cart">
+  <div class="cart-fab__icon"></div>
+  <span class="cart-fab__count" id="fabCount">0</span>
+</button>
+
+<div class="toast" id="toast">
+  <span>Added</span> <span id="toastItem"></span> to your box
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.13/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
